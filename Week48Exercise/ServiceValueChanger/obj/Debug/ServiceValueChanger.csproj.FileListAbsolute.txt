@@ -1,0 +1,6 @@
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ServiceValueChanger\bin\Debug\ServiceValueChanger.exe.config
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ServiceValueChanger\bin\Debug\ServiceValueChanger.exe
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ServiceValueChanger\bin\Debug\ServiceValueChanger.pdb
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ServiceValueChanger\obj\Debug\ServiceValueChanger.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ServiceValueChanger\obj\Debug\ServiceValueChanger.exe
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ServiceValueChanger\obj\Debug\ServiceValueChanger.pdb

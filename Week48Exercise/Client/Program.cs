@@ -30,7 +30,6 @@ namespace Client
             try
             {
                 string data = "";
-                Console.ReadKey();
                 while (data != null)
                 {
                     data = reader.ReadLine();

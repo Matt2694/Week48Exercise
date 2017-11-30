@@ -14,6 +14,9 @@ namespace WCFServiceLibrary
         [OperationContract]
         int GetData();
 
+        [OperationContract]
+        void SetData(int value);
+
         //[OperationContract]
         //CompositeType GetDataUsingDataContract(CompositeType composite);
 

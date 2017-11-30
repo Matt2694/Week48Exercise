@@ -12,6 +12,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "ConsoleApp2\Serve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{35D9D74C-9B50-46F5-AC8D-3146D9B7442F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceValueChanger", "ServiceValueChanger\ServiceValueChanger.csproj", "{2606ECC0-7674-4961-9147-D01F6C988DDD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6D03BB6-EAAF-4D58-81AB-A040407FEE38} = {C6D03BB6-EAAF-4D58-81AB-A040407FEE38}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +35,10 @@ Global
 		{35D9D74C-9B50-46F5-AC8D-3146D9B7442F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35D9D74C-9B50-46F5-AC8D-3146D9B7442F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35D9D74C-9B50-46F5-AC8D-3146D9B7442F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2606ECC0-7674-4961-9147-D01F6C988DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2606ECC0-7674-4961-9147-D01F6C988DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2606ECC0-7674-4961-9147-D01F6C988DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2606ECC0-7674-4961-9147-D01F6C988DDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -67,7 +67,7 @@ namespace ConsoleApp2
             {
                 currentValue = value;
                 string input = value.ToString();
-
+                
                 broadcastService.BroadCastMessage(input); //Fire the event
             }
             Thread.Sleep(5000);
