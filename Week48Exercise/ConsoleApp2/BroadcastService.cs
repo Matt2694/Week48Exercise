@@ -15,7 +15,7 @@ namespace ConsoleApp2
         public BroadcastService(string name)
         {
             this.name = name;
-            currentValue = -1;
+            currentValue = 0;
         }
 
         private string name;

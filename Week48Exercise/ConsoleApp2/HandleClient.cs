@@ -12,7 +12,7 @@ namespace ConsoleApp2
         private TcpClient client;
         private StreamReader reader = null;
         private StreamWriter writer = null;
-        private int currentValue;
+        private object o = new object();
 
         public HandleClient(TcpClient newClient, BroadcastService newBroadcastService)
         {
@@ -63,12 +63,15 @@ namespace ConsoleApp2
         private bool ExecuteCommand()
         {
             int value = service.GetData();
-            if(currentValue != value)
+            lock (o)
             {
-                currentValue = value;
-                string input = value.ToString();
-                
-                broadcastService.BroadCastMessage(input); //Fire the event
+                if (broadcastService.currentValue != value)
+                {
+                    broadcastService.currentValue = value;
+                    string input = value.ToString();
+
+                    broadcastService.BroadCastMessage(input); //Fire the event
+                }
             }
             Thread.Sleep(5000);
             return true;
