@@ -1,22 +1,26 @@
 ﻿using System;
 using System.IO;
 using System.Net.Sockets;
+using System.Threading;
 
 namespace ConsoleApp2
 {
     internal class HandleClient
     {
         private Service.ServiceClient service = new Service.ServiceClient();
+        private BroadcastService broadcastService;
         private TcpClient client;
         private StreamReader reader = null;
         private StreamWriter writer = null;
+        private int currentValue;
 
-        public HandleClient(TcpClient newClient)
+        public HandleClient(TcpClient newClient, BroadcastService newBroadcastService)
         {
             client = newClient;
+            broadcastService = newBroadcastService;
         }
 
-        public void InformationAboutDirectory()
+        public void DoStuff()
         {
             try
             {
@@ -24,15 +28,55 @@ namespace ConsoleApp2
                 writer = new StreamWriter(client.GetStream());
                 writer.AutoFlush = true;
 
-                while (true)
-                {
-                    writer.WriteLine(service.GetData());
-                }
+                Dialog();
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
+        }
+
+        private void SendMessageToClient(string text)
+        {
+            writer.WriteLine(text);
+            writer.Flush();
+        }
+
+        private void Dialog()
+        {
+            try
+            {
+                SendMessageToClient("Enter: <bye> to end communication");
+                broadcastService.BroadCastEvent += this.BroadcastAction; //Which method to fire when ready (subscription)
+
+                while (ExecuteCommand()) ;
+            }
+            catch
+            {
+            }
+            finally
+            {
+                broadcastService.BroadCastEvent -= this.BroadcastAction; //unsubscribe
+            }
+        }
+
+        private bool ExecuteCommand()
+        {
+            int value = service.GetData();
+            if(currentValue != value)
+            {
+                currentValue = value;
+                string input = value.ToString();
+
+                broadcastService.BroadCastMessage(input); //Fire the event
+            }
+            Thread.Sleep(5000);
+            return true;
+        }
+
+        public void BroadcastAction(string msg)
+        {
+            SendMessageToClient("Broadcast:" + msg);
         }
     }
 }

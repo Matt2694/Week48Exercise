@@ -11,6 +11,7 @@ namespace ConsoleApp2
 {
     class Program
     {
+        private BroadcastService broadcastService = new BroadcastService("Broadcast");
         private TcpListener listener = null;
         private List<Thread> clientList = new List<Thread>();
 
@@ -49,9 +50,9 @@ namespace ConsoleApp2
             HandleClient clientHandler;
             while (true)
             {
-                clientHandler = new HandleClient(listener.AcceptTcpClient());
+                clientHandler = new HandleClient(listener.AcceptTcpClient(), broadcastService);
                 Console.WriteLine("Client Connected");
-                clientList.Add(new Thread(new ThreadStart(clientHandler.InformationAboutDirectory)));
+                clientList.Add(new Thread(new ThreadStart(clientHandler.DoStuff)));
                 clientList[clientList.Count - 1].Start();
             }
         }

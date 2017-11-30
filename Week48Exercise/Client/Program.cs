@@ -30,14 +30,11 @@ namespace Client
             try
             {
                 string data = "";
-                //writer.WriteLine(data);
-                while (data != null/* && data != ""*/)
+                Console.ReadKey();
+                while (data != null)
                 {
                     data = reader.ReadLine();
                     Console.WriteLine(data);
-
-                    data = Console.ReadLine();
-                    writer.WriteLine(data);
                 }
                 client.Close();
             }
