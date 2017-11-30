@@ -1,0 +1,7 @@
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp2\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp2\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
