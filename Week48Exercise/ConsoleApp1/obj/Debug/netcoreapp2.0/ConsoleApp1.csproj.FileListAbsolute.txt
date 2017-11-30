@@ -1,0 +1,16 @@
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.dll
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.pdb
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\ConsoleApp1.deps.json
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\ConsoleApp1.runtimeconfig.json
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\ConsoleApp1.dll
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\ConsoleApp1.pdb
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.deps.json
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.runtimeconfig.json
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.runtimeconfig.dev.json
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.dll
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\bin\Debug\netcoreapp2.0\ConsoleApp1.pdb
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\ConsoleApp1\obj\Debug\netcoreapp2.0\ConsoleApp1.csprojResolveAssemblyReference.cache
