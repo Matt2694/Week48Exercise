@@ -1,0 +1,6 @@
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\WCFServiceLibrary\bin\Debug\WCFServiceLibrary.dll.config
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\WCFServiceLibrary\bin\Debug\WCFServiceLibrary.dll
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\WCFServiceLibrary\bin\Debug\WCFServiceLibrary.pdb
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\WCFServiceLibrary\obj\Debug\WCFServiceLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\WCFServiceLibrary\obj\Debug\WCFServiceLibrary.dll
+C:\Users\Matt\Documents\GitHub\Week48Exercise\Week48Exercise\WCFServiceLibrary\obj\Debug\WCFServiceLibrary.pdb
