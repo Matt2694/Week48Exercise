@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net.Sockets;
 using System.Threading;
@@ -46,7 +47,6 @@ namespace ConsoleApp2
         {
             try
             {
-                SendMessageToClient("Enter: <bye> to end communication");
                 broadcastService.BroadCastEvent += this.BroadcastAction; //Which method to fire when ready (subscription)
 
                 while (ExecuteCommand()) ;
@@ -62,15 +62,13 @@ namespace ConsoleApp2
 
         private bool ExecuteCommand()
         {
-            int value = service.GetData();
+            string[] value = service.GetData();
             lock (o)
             {
-                if (broadcastService.currentValue != value)
+                if(broadcastService.currentValue != value.Length)
                 {
-                    broadcastService.currentValue = value;
-                    string input = value.ToString();
-
-                    broadcastService.BroadCastMessage(input); //Fire the event
+                    broadcastService.BroadCastMessage(value[value.Length - 1]); //Fire the event
+                    broadcastService.currentValue = value.Length;
                 }
             }
             Thread.Sleep(5000);

@@ -16,16 +16,16 @@ namespace ServiceValueChanger.Service {
     public interface IService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetData", ReplyAction="http://tempuri.org/IService/GetDataResponse")]
-        int GetData();
+        string[] GetData();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetData", ReplyAction="http://tempuri.org/IService/GetDataResponse")]
-        System.Threading.Tasks.Task<int> GetDataAsync();
+        System.Threading.Tasks.Task<string[]> GetDataAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SetData", ReplyAction="http://tempuri.org/IService/SetDataResponse")]
-        void SetData(int value);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/AddData", ReplyAction="http://tempuri.org/IService/AddDataResponse")]
+        void AddData(string value);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SetData", ReplyAction="http://tempuri.org/IService/SetDataResponse")]
-        System.Threading.Tasks.Task SetDataAsync(int value);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/AddData", ReplyAction="http://tempuri.org/IService/AddDataResponse")]
+        System.Threading.Tasks.Task AddDataAsync(string value);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,20 +55,20 @@ namespace ServiceValueChanger.Service {
                 base(binding, remoteAddress) {
         }
         
-        public int GetData() {
+        public string[] GetData() {
             return base.Channel.GetData();
         }
         
-        public System.Threading.Tasks.Task<int> GetDataAsync() {
+        public System.Threading.Tasks.Task<string[]> GetDataAsync() {
             return base.Channel.GetDataAsync();
         }
         
-        public void SetData(int value) {
-            base.Channel.SetData(value);
+        public void AddData(string value) {
+            base.Channel.AddData(value);
         }
         
-        public System.Threading.Tasks.Task SetDataAsync(int value) {
-            return base.Channel.SetDataAsync(value);
+        public System.Threading.Tasks.Task AddDataAsync(string value) {
+            return base.Channel.AddDataAsync(value);
         }
     }
 }

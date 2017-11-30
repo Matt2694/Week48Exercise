@@ -26,7 +26,7 @@ namespace ServiceValueChanger
                 switch (input)
                 {
                     case "close": running = false; break;
-                    default: service.SetData(Int32.Parse(input)); break;
+                    default: service.AddData(input); break;
                 }
             }
         }

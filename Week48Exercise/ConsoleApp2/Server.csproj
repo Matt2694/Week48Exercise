@@ -56,6 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Connected Services\Service\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\Service\service.wsdl" />
     <None Include="Connected Services\Service\service.xsd">
       <SubType>Designer</SubType>

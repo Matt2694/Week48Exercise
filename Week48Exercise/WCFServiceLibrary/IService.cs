@@ -12,10 +12,10 @@ namespace WCFServiceLibrary
     public interface IService
     {
         [OperationContract]
-        int GetData();
+        List<string> GetData();
 
         [OperationContract]
-        void SetData(int value);
+        void AddData(string value);
 
         //[OperationContract]
         //CompositeType GetDataUsingDataContract(CompositeType composite);

@@ -4,6 +4,7 @@
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import namespace="http://tempuri.org/" />
       <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IService_GetData_InputMessage">
@@ -12,20 +13,20 @@
   <wsdl:message name="IService_GetData_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetDataResponse" />
   </wsdl:message>
-  <wsdl:message name="IService_SetData_InputMessage">
-    <wsdl:part name="parameters" element="tns:SetData" />
+  <wsdl:message name="IService_AddData_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddData" />
   </wsdl:message>
-  <wsdl:message name="IService_SetData_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SetDataResponse" />
+  <wsdl:message name="IService_AddData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddDataResponse" />
   </wsdl:message>
   <wsdl:portType name="IService">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/GetData" message="tns:IService_GetData_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDataResponse" message="tns:IService_GetData_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SetData">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService/SetData" message="tns:IService_SetData_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService/SetDataResponse" message="tns:IService_SetData_OutputMessage" />
+    <wsdl:operation name="AddData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/AddData" message="tns:IService_AddData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/AddDataResponse" message="tns:IService_AddData_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
@@ -39,8 +40,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SetData">
-      <soap:operation soapAction="http://tempuri.org/IService/SetData" style="document" />
+    <wsdl:operation name="AddData">
+      <soap:operation soapAction="http://tempuri.org/IService/AddData" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

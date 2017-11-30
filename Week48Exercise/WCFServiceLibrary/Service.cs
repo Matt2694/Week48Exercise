@@ -11,16 +11,16 @@ namespace WCFServiceLibrary
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, ConcurrencyMode = ConcurrencyMode.Single)]
     public class Service : IService
     {
-        public int DataValue { get; set; }
+        public List<string> ProductValue = new List<string>();
 
-        public int GetData()
+        public List<string> GetData()
         {
-            return DataValue;
+            return ProductValue;
         }
 
-        public void SetData(int value)
+        public void AddData(string value)
         {
-            DataValue = value;
+            ProductValue.Add(value);
         }
 
         //public CompositeType GetDataUsingDataContract(CompositeType composite)
